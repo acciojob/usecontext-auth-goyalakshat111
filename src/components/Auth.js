@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import authContext from "../context/authContext";
+import authContext from "../context/AuthContext";
 
 const Auth = () => {
   const { isChecked, setIsChecked } = useContext(authContext);
@@ -13,12 +13,12 @@ const Auth = () => {
         <p>you are not authenticated</p>
       )}
       <label>
-      <input
-        type="checkbox"
-        checked={isChecked}
-        onChange={(e) => setIsChecked(e.target.checked)}
-      />
-      I am not a robot
+        <input
+          type="checkbox"
+          checked={isChecked}
+          onChange={(e) => setIsChecked(e.target.checked)}
+        />
+        I am not a robot
       </label>
     </>
   );
